@@ -13,6 +13,10 @@
 });
 
 function openFullscreen() {
+
+    alert('ffff');
+    console.log('test');
+
     var elem = document.getElementById("PresentationForClass");
     if (elem.requestFullscreen) {
         elem.requestFullscreen();
