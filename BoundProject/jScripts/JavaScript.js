@@ -10,21 +10,31 @@
         $(".nav-design").addClass("navclick-design");
         location.reload();
     });
+
+
+    $("#btn123").click(function () {
+        var elem = document.getElementById("PresentationForClass");
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+    });
 });
 
-function openFullscreen() {
-
-    alert('ffff');
-    console.log('test');
-
-    var elem = document.getElementById("PresentationForClass");
-    if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-    } else if (elem.mozRequestFullScreen) { /* Firefox */
-        elem.mozRequestFullScreen();
-    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-        elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE/Edge */
-        elem.msRequestFullscreen();
-    }
-}
+//function openFullscreen() {
+//    var elem = document.getElementById("PresentationForClass");
+//    if (elem.requestFullscreen) {
+//        elem.requestFullscreen();
+//    } else if (elem.mozRequestFullScreen) { /* Firefox */
+//        elem.mozRequestFullScreen();
+//    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+//        elem.webkitRequestFullscreen();
+//    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+//        elem.msRequestFullscreen();
+//    }
+//}
