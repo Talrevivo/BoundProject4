@@ -533,12 +533,13 @@ details[open] summary:hover::after {
     #Ptext2 {
         margin-right: 16px;
     }
-    .control-icon control-icon-expand{
+    .control-icon{
         display: inline-block;
     }
     
     details {
-        padding: 15px 20px 15px;
+        display: inline-block;
+        padding: 20px 20px 20px;
     }
 
     #icons {
