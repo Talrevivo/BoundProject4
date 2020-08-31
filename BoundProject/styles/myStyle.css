@@ -535,7 +535,7 @@ details[open] summary:hover::after {
     }
     
     details {
-        padding: 28px 20px 28px 1px;
+        padding: 28px 28px;
     }
 
     #icons {
